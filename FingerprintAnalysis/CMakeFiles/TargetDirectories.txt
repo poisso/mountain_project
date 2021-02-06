@@ -1,0 +1,4 @@
+/home/andrew/MSIAM/digital-analysis-of-fingerprints/FingerprintAnalysis/CMakeFiles/rebuild_cache.dir
+/home/andrew/MSIAM/digital-analysis-of-fingerprints/FingerprintAnalysis/CMakeFiles/edit_cache.dir
+/home/andrew/MSIAM/digital-analysis-of-fingerprints/FingerprintAnalysis/CMakeFiles/Prog.dir
+/home/andrew/MSIAM/digital-analysis-of-fingerprints/FingerprintAnalysis/CMakeFiles/Doxygen.dir

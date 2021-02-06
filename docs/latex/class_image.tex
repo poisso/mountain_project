@@ -1,0 +1,163 @@
+\hypertarget{class_image}{}\doxysection{Image Class Reference}
+\label{class_image}\index{Image@{Image}}
+
+
+This class allows to perform things with images.  
+
+
+
+
+{\ttfamily \#include $<$Image.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_aee0365602afa3fb98537119802914beb}\label{class_image_aee0365602afa3fb98537119802914beb}} 
+{\bfseries Image} (const std\+::string \&src)
+\item 
+\mbox{\Hypertarget{class_image_ac1b4de1bc05c18c6b871b828d7991b3d}\label{class_image_ac1b4de1bc05c18c6b871b828d7991b3d}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries similarity} (double theta, double scale, double tx, double ty)
+\item 
+\mbox{\Hypertarget{class_image_aab121165182d85688609ee02281e0026}\label{class_image_aab121165182d85688609ee02281e0026}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries isotropic\+Local\+Similarity} (double theta, double radius, int x, int y)
+\item 
+\mbox{\Hypertarget{class_image_abd3bb3dcf7435d8a6b13b5ecc1065a84}\label{class_image_abd3bb3dcf7435d8a6b13b5ecc1065a84}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries anisotropic\+Local\+Similarity} (double theta, double ellipse\+\_\+width, double ellipse\+\_\+height, int x, int y)
+\item 
+\mbox{\Hypertarget{class_image_ac067ec6136c6f394ff109f9eb4c4f2cd}\label{class_image_ac067ec6136c6f394ff109f9eb4c4f2cd}} 
+virtual void {\bfseries show} ()
+\item 
+\mbox{\Hypertarget{class_image_a2f37298aa58ad0d3451a0c063a5f99d7}\label{class_image_a2f37298aa58ad0d3451a0c063a5f99d7}} 
+void {\bfseries save} (const std\+::string \&src)
+\item 
+\mbox{\Hypertarget{class_image_ae591275ba2f7d01f9912ae3e829bb290}\label{class_image_ae591275ba2f7d01f9912ae3e829bb290}} 
+void {\bfseries find\+Min\+Max} ()
+\item 
+\mbox{\Hypertarget{class_image_aa4f881e18d7b454ca185c05ec8e70b6d}\label{class_image_aa4f881e18d7b454ca185c05ec8e70b6d}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{class_image_ae28ddcd2b722d46bf5377f02f7b30a4d}\label{class_image_ae28ddcd2b722d46bf5377f02f7b30a4d}} 
+void {\bfseries print\+Vals} ()
+\item 
+\mbox{\Hypertarget{class_image_a92a09326e51dd09df629c8e65c733e36}\label{class_image_a92a09326e51dd09df629c8e65c733e36}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries draw\+Random\+Squares} ()
+\item 
+\mbox{\Hypertarget{class_image_a3cb976bea23475a71376f04617581633}\label{class_image_a3cb976bea23475a71376f04617581633}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries invert\+Colors} ()
+\item 
+\mbox{\Hypertarget{class_image_a4b8c0c8161a2a07b49a666a9b9a61b80}\label{class_image_a4b8c0c8161a2a07b49a666a9b9a61b80}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries contrast\+Thresholding} (const float \&level)
+\item 
+\mbox{\hyperlink{class_image}{Image}} \& \mbox{\hyperlink{class_image_a094739156efbacfa629e539a70defe63}{superpose}} (const \mbox{\hyperlink{class_image}{Image}} \&other\+Image)
+\item 
+\mbox{\Hypertarget{class_image_a40ed603287def2798b1ace93703466a0}\label{class_image_a40ed603287def2798b1ace93703466a0}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries diag\+Symm} (int diag\+\_\+type)
+\item 
+\mbox{\Hypertarget{class_image_acda69556dfd81e08bee4fcb81668ec14}\label{class_image_acda69556dfd81e08bee4fcb81668ec14}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries symm\+TransformY} ()
+\item 
+\mbox{\Hypertarget{class_image_ab67f797c46b30d13d9ce14e928fe950c}\label{class_image_ab67f797c46b30d13d9ce14e928fe950c}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries symm\+TransformX} ()
+\item 
+\mbox{\Hypertarget{class_image_a14c1708f0ac4e209d57e8de3e50d8dd5}\label{class_image_a14c1708f0ac4e209d57e8de3e50d8dd5}} 
+cv\+::\+Mat {\bfseries pressure\+Coeffs\+Exp} (const std\+::string \&strength, const int \&centerY, const int \&centerX, const float \&speed)
+\item 
+\mbox{\Hypertarget{class_image_a77e91eaeecc56863f6a220124f7195d2}\label{class_image_a77e91eaeecc56863f6a220124f7195d2}} 
+cv\+::\+Mat {\bfseries pressure\+Coeffs\+Poly} (const std\+::string \&strength, const int \&centerY, const int \&centerX, const float \&speed)
+\item 
+\mbox{\Hypertarget{class_image_a86ab565fdeedf2353744691b8d71b22b}\label{class_image_a86ab565fdeedf2353744691b8d71b22b}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries pressure\+Transform} (const std\+::string \&strength, const std\+::string \&transform\+Type, const int \&centerY, const int \&centerX, const float \&speed)
+\item 
+\mbox{\Hypertarget{class_image_ade6da18a4f21bda4fa17fb6db6097462}\label{class_image_ade6da18a4f21bda4fa17fb6db6097462}} 
+cv\+::\+Mat {\bfseries extract\+Weak\+Pressure\+Mask} ()
+\item 
+\mbox{\Hypertarget{class_image_a73185c430d5e32714faa524cd292e1c4}\label{class_image_a73185c430d5e32714faa524cd292e1c4}} 
+cv\+::\+Mat {\bfseries anisotropic\+Weak\+Pressure\+Coeffs} (const cv\+::\+Point \&center, const double \&r\+Max, const double \&r\+Min, const double \&speed)
+\item 
+\mbox{\Hypertarget{class_image_aba8586568555723b99078f279a67100a}\label{class_image_aba8586568555723b99078f279a67100a}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries anisotropic\+Weak\+Pressure\+Transform} (const float \&speed)
+\item 
+\mbox{\Hypertarget{class_image_a50a71da7e441760b753ad1e337acd99b}\label{class_image_a50a71da7e441760b753ad1e337acd99b}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries anisotropic\+Local\+Pressure} (double ellipse\+\_\+width, double ellipse\+\_\+height, int x, int y)
+\item 
+\mbox{\Hypertarget{class_image_ad93e3c93308bab294d34397b241f9734}\label{class_image_ad93e3c93308bab294d34397b241f9734}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries convolve} (Filter\+Type filter\+Type, int size, bool deconvolve=false)
+\item 
+\mbox{\Hypertarget{class_image_a8cc0b6c64d5a60dee4034b89afeb6935}\label{class_image_a8cc0b6c64d5a60dee4034b89afeb6935}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries remove\+Border} (const std\+::string \&BorW, const int \&thickness)
+\item 
+\mbox{\Hypertarget{class_image_aa842b6e61722d3e54860402b1a8b57df}\label{class_image_aa842b6e61722d3e54860402b1a8b57df}} 
+void {\bfseries convolve\+O\+P\+E\+N\+CV} (int kernel\+Size, const std\+::string \&type)
+\item 
+\mbox{\Hypertarget{class_image_ad281bcdb0ea05c50462e1e1a7768e4cd}\label{class_image_ad281bcdb0ea05c50462e1e1a7768e4cd}} 
+\mbox{\hyperlink{class_image}{Image}} \& {\bfseries plot\+Loss} (\mbox{\hyperlink{class_image}{Image}} \&other)
+\item 
+\mbox{\Hypertarget{class_image_aa88d5d704de7c507d7359d1b0add317e}\label{class_image_aa88d5d704de7c507d7359d1b0add317e}} 
+int {\bfseries loss\+Function} (\mbox{\hyperlink{class_image}{Image}} \&other)
+\item 
+\mbox{\Hypertarget{class_image_a7c16f25284a490f4b0b40083acd41525}\label{class_image_a7c16f25284a490f4b0b40083acd41525}} 
+cv\+::\+Point {\bfseries gradient\+Descent} (\mbox{\hyperlink{class_image}{Image}} \&other, double alpha, double epsilon)
+\item 
+\mbox{\Hypertarget{class_image_a297dde816916f4eb811b254eab0b5204}\label{class_image_a297dde816916f4eb811b254eab0b5204}} 
+void {\bfseries useless\+Plot} (\mbox{\hyperlink{class_image}{Image}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_a33a2e7a4f48016111051825e88a85a37}\label{class_image_a33a2e7a4f48016111051825e88a85a37}} 
+std\+::string {\bfseries src}
+\item 
+\mbox{\Hypertarget{class_image_ab8d12f635013c04159cd4d3d972bac88}\label{class_image_ab8d12f635013c04159cd4d3d972bac88}} 
+int {\bfseries width}
+\item 
+\mbox{\Hypertarget{class_image_a51df43db420c9c0b57536cb2dd36de5c}\label{class_image_a51df43db420c9c0b57536cb2dd36de5c}} 
+int {\bfseries height}
+\item 
+\mbox{\Hypertarget{class_image_af04538a1ccfde320467c98836f0b705c}\label{class_image_af04538a1ccfde320467c98836f0b705c}} 
+int {\bfseries min\+Intensity}
+\item 
+\mbox{\Hypertarget{class_image_ac23c37f50c06a7d82db6b07365fccd12}\label{class_image_ac23c37f50c06a7d82db6b07365fccd12}} 
+int {\bfseries max\+Intensity}
+\item 
+\mbox{\Hypertarget{class_image_aa29d0e29dbb8cbef0f1257f973df8e10}\label{class_image_aa29d0e29dbb8cbef0f1257f973df8e10}} 
+cv\+::\+Mat\+\_\+$<$ float $>$ {\bfseries matrix\+Img}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class allows to perform things with images. 
+
+\begin{DoxyAuthor}{Author}
+Alisa Barkar, Andrew Mc\+Donald, Nikolay Tverdokhleb, Veselin Doychinov 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 January 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_a094739156efbacfa629e539a70defe63}\label{class_image_a094739156efbacfa629e539a70defe63}} 
+\index{Image@{Image}!superpose@{superpose}}
+\index{superpose@{superpose}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{superpose()}{superpose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} \& Image\+::superpose (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{other\+Image }\end{DoxyParamCaption})}
+
+A method for superposing two images together 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em const} & \mbox{\hyperlink{class_image}{Image}} \& the image to superpose with \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Image.\+h\item 
+Filter.\+cpp\item 
+Image.\+cpp\item 
+Motion\+Model.\+cpp\item 
+Pressure.\+cpp\item 
+Register.\+cpp\item 
+Symmetry\+Transformations.\+cpp\end{DoxyCompactItemize}
